@@ -109,6 +109,9 @@ type Effect struct {
 	// Radius of the blur effect (applies to shadows as well)
 	Radius float64
 
+	// Radius of the drop shadow effect
+	Spread float64
+
 	// The following properties are for shadows only:
 	// The color of the shadow
 	Color Color
