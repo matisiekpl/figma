@@ -118,6 +118,7 @@ type Node struct {
 	Strokes             []Paint     `json:"strokes,omitempty"`
 	StrokeWeight        float64     `json:"strokeWeight,omitempty"`
 	StrokeAlign         StrokeAlign `json:"strokeAlign,omitempty"`
+	StrokeDashes        []float64   `json:"strokeDashes,omitempty"`
 	Characters          string      `json:"characters,omitempty"`
 	Style               TypeStyle   `json:"style,omitempty"`
 
