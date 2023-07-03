@@ -133,4 +133,7 @@ type Node struct {
 
 	// ID of component that this instance came from, refers to components table.
 	ComponentID string
+
+	CornerRadius 	    float64 `json:"cornerRadius,omitempty"`
+	Rotation 	    float64 `json:"rotation,omitempty"`
 }
