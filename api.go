@@ -158,7 +158,7 @@ func get(c *http.Client, token, url string, res interface{}) error {
 	}
 
 	req.Header.Add("Accept", "application/json")
-	req.Header.Add("X-Figma-Token", token)
+	req.Header.Add("Authorization", "Bearer " + token)
 
 	resp, err := c.Do(req)
 	if err != nil {
@@ -190,7 +190,7 @@ func post(c *http.Client, token, url string, body, res interface{}) error {
 
 	req.Header.Add("Accept", "application/json")
 	req.Header.Add("Content-Type", "application/json")
-	req.Header.Add("X-Figma-Token", token)
+	req.Header.Add("Authorization", "Bearer " + token)
 
 	resp, err := c.Do(req)
 	if err != nil {
