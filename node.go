@@ -13,9 +13,9 @@ type File struct {
 	Document      Node `json:"document"`
 	SchemaVersion int  `json:"schemaVersion"`
 	Name          string `json:"name"`
-	ThumbnailURL  string `json:"thumbnailUrl`"
+	ThumbnailURL  string `json:"thumbnailUrl"`
 	Role          string `json:"role"`
-	LastModified  string `json:"lastModified`"
+	LastModified  string `json:"lastModified"`
 }
 
 // Nodes returns a slice containing all subnodes of a Figma file.
